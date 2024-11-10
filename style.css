@@ -1,6 +1,7 @@
 
 
 /* Два шрифта ниже загружены в папку "fonts" и хранятся локально*/
+
 @font-face {
     font-family: "Good Vibes";
     src: url(./fonts/GoodVibes/GoodVibesCyr.ttf);
@@ -11,8 +12,9 @@
     src: url(./fonts/Rubic80sFade/Rubik80sFade-Regular.ttf);
 }
 
-/* Два шрифта ниже ссылаются на внешний источник. Это ссылка расположена 
+/* Два шрифта ниже ссылаются на внешний источник "Google fonts". Это ссылка расположена 
 внутри CSS файла. */
+
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
 
