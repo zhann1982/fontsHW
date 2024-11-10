@@ -6,22 +6,55 @@
     <title>Работа со шрифтами</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Ссылки ниже ссылаются на шрифты "Honk" и "Bungee Spice"
+     Данные ссылки прописали в html документе -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Radley:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Основной заголовок имеет шрифт "Good Vibes" -->
     <h1>Работа со шрифтами</h1>
 
     <div class="container-1">
         
+        <!-- Данный заголовок имеет шрифт "Rubic 80s Fade" -->
         <h2>Some random header 1</h2>
+
+        <!-- Данный абзац имеет шрифт "Radley" -->
         <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum suscipit temporibus sed necessitatibus soluta consequatur id. Obcaecati, excepturi? Tempore at voluptate similique distinctio deserunt quia iure minus obcaecati repudiandae?</p>
+
+        <!-- Данный абзац имеет шрифт "Honk" -->
         <p class="numbers">1 2 3 4 5 6 7 8 9 0</p>
+
+        <!-- Данный абзац имеет шрифт "Nosifer" -->
+        <p class="lorem-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, sequi.</p>
     </div>
 
+
     <div class="container-2">
+
+        <!-- Данный заголовок имеет шрифт Arial
+         не получилось использовать шрифт Lobster, так как он не был
+         заранее загружен или для него не были прописаны ссылки -->
         <h2>Some random header 2</h2>
-        <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum suscipit temporibus sed necessitatibus soluta consequatur id. Obcaecati, excepturi? Tempore at voluptate similique distinctio deserunt quia iure minus obcaecati repudiandae?</p>
-        <p class="numbers">1 2 3 4 5 6 7 8 9 0</p>
+
+        <!-- Данный абзац имеет шрифт Helvetica
+        не получилось использовать шрифт Radley, 
+        так как в его названии была допущена опечатка -->
+        <p class="lorem-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum suscipit temporibus sed necessitatibus soluta consequatur id. Obcaecati, excepturi? Tempore at voluptate similique distinctio deserunt quia iure minus obcaecati repudiandae?</p>
+        
+        <!-- Данный абзац имеет шрифт "Bungee Spice"
+         все шрифты прописаны корректно -->
+        <p class="numbers-2">1 2 3 4 5 6 7 8 9 0</p>
+
+        <!-- Второй шрифт в данном абзаце имеет опечатку в названии
+         Если первый шрифт не сработает по какой-либо причине, 
+         тогда будет использован третий шрифт -->
+        <p class="lorem-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     
 

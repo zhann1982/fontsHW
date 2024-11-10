@@ -1,4 +1,6 @@
 
+
+/* Два шрифта ниже загружены в папку "fonts" и хранятся локально*/
 @font-face {
     font-family: "Good Vibes";
     src: url(./fonts/GoodVibes/GoodVibesCyr.ttf);
@@ -9,23 +11,14 @@
     src: url(./fonts/Rubic80sFade/Rubik80sFade-Regular.ttf);
 }
 
-@font-face {
-    font-family: "Nosifer";
-    src: url(./fonts/Nosifer/Nosifer-Regular.ttf);
-}
+/* Два шрифта ниже ссылаются на внешний источник. Это ссылка расположена 
+внутри CSS файла. */
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
 
-@font-face {
-    font-family: "Radley";
-    src: url(./fonts/Radley/Radley-Regular.ttf);
-}
-
-@font-face {
-    font-family: Honk;
-    src: url(./fonts/Honk/Honk-Regular-VariableFont_MORF\,SHLN.ttf);
-}
 
 body {
-    background-color: #fdfdfd;
+    background-color: #f3f3f3;
 }
 
 h1 {
@@ -35,13 +28,22 @@ h1 {
     text-align: center;
 }
 
-.container-1 {
-
+.container-1 , 
+.container-2 {
     width: 500px;
     padding: 30px;
     margin-inline: auto;
-    background-color: #fdfdfd;
-    box-shadow: 5px 5px 5px #efefef, -5px -5px 5px #ffffff;
+    background-color: #f5f5f5;
+    
+    margin-bottom: 50px;
+}
+
+.container-1:hover , 
+.container-2:hover {
+    box-shadow: -3px -3px 8px 4px #ffffff, 5px 5px 10px 3px #e4e3e3;
+}
+
+.container-1 {
 
     h2 {
         font-family: "Rubic 80s Fade";
@@ -58,6 +60,47 @@ h1 {
         font-family: Honk;
         font-weight: normal;
         font-size: 30px;
+    }
+
+    p.lorem-2 {
+        font-family: Nosifer;
+    }
+    
+}
+
+.container-2 {
+
+    h2 {
+        font-family: Lobster, Arial, Helvetica, sans-serif;
+        /* Здесь шрифт "Lobster" не сработал, так как его вообще не 
+        загрузили и не дали никакой ссылки на него. Соответственно
+        сработал стоящий вслед за ним шрифт "Arial" */
+
+        font-weight: 700;
+        color: #1a52ee;
+    }
+
+    p.lorem-3 {
+        font-family: RadleyA, Helvetica, sans-serif;
+        /* Здесь допущена ошибка в названии шрифта, 
+        поэтому будет использован шрифт идущий следом */
+
+        font-weight: normal;
+    }
+
+    p.numbers-2 {
+        font-family: "Bungee Spice", Honk, Arial, serif;
+        /* Здесь нету ошибок в написании и ссылка на шрифт "Bungee Spice"  
+        находиться в html документе*/
+
+        font-weight: normal;
+        font-size: 30px;
+    }
+
+    p.lorem-4 {
+        font-family: Nosifer, Georgian, Times, 'Times New Roman', serif;
+        /* Здесь допущена ошибка в названии шрифта Georgia.
+        Если шрифт Nosifer не сработает, то сработает шрифт Times */
     }
     
 }
