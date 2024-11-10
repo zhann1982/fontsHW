@@ -1,0 +1,64 @@
+
+@font-face {
+    font-family: "Good Vibes";
+    src: url(./fonts/GoodVibes/GoodVibesCyr.ttf);
+}
+
+@font-face {
+    font-family: "Rubic 80s Fade";
+    src: url(./fonts/Rubic80sFade/Rubik80sFade-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Nosifer";
+    src: url(./fonts/Nosifer/Nosifer-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Radley";
+    src: url(./fonts/Radley/Radley-Regular.ttf);
+}
+
+@font-face {
+    font-family: Honk;
+    src: url(./fonts/Honk/Honk-Regular-VariableFont_MORF\,SHLN.ttf);
+}
+
+body {
+    background-color: #fdfdfd;
+}
+
+h1 {
+    font-family: "Good Vibes", cursive;
+    font-variant: normal;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container-1 {
+
+    width: 500px;
+    padding: 30px;
+    margin-inline: auto;
+    background-color: #fdfdfd;
+    box-shadow: 5px 5px 5px #efefef, -5px -5px 5px #ffffff;
+
+    h2 {
+        font-family: "Rubic 80s Fade";
+        font-weight: normal;
+        color: #63e726;
+    }
+
+    p.lorem {
+        font-family: Radley;
+        font-weight: normal;
+    }
+
+    p.numbers {
+        font-family: Honk;
+        font-weight: normal;
+        font-size: 30px;
+    }
+    
+}
+
